@@ -23,6 +23,7 @@
   </script>
   <style>
     * { font-family: 'Inter', sans-serif; }
+    html { scroll-behavior: smooth; }
     body { background: #020408; }
 
     .glow-red { box-shadow: 0 0 30px rgba(239, 68, 68, 0.15), 0 0 60px rgba(239, 68, 68, 0.05); }
@@ -297,7 +298,7 @@
         </div>
 
         <!-- Lado direito: Formulário -->
-        <div class="glass-red rounded-2xl p-6 md:p-8 glow-red">
+        <div id="formulario" class="glass-red rounded-2xl p-6 md:p-8 glow-red">
           <h3 class="text-xl font-bold mb-2 text-center">Agende uma reunião com nosso time</h3>
           <p class="text-sm text-gray-400 mb-8 text-center">Preencha abaixo que um consultor especializado entra em contato.</p>
 
@@ -472,6 +473,22 @@
           </div>
         </div>
 
+      </div>
+
+      <!-- CTA — Agendar Reunião -->
+      <div class="glass-red rounded-2xl p-10 md:p-14 mt-14 text-center glow-red-strong animate-in delay-3">
+        <h3 class="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight mb-4 leading-tight">
+          Quer multiplicar seus resultados com
+          <span class="bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent"> Inteligência Artificial</span>?
+        </h3>
+        <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+          Agende uma reunião com nosso time e descubra como aplicar IA no seu marketing e vendas.
+        </p>
+        <a href="#formulario"
+           class="btn-shimmer inline-flex items-center justify-center gap-3 px-12 py-5 rounded-xl text-white font-bold text-lg tracking-wide glow-red-strong transition-all duration-300 hover:scale-[1.03] hover:shadow-red-500/30 hover:shadow-2xl">
+          <span class="relative z-10">AGENDAR MINHA REUNIÃO</span>
+          <svg class="w-5 h-5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
       </div>
 
       <!-- Resultado -->
